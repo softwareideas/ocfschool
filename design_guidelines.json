@@ -1,0 +1,96 @@
+{
+  "theme": "light",
+  "typography": {
+    "headings": {
+      "font": "Lora",
+      "fallback": "serif",
+      "weights": ["400", "600", "700"],
+      "guidelines": "Use tracking-tight for sizes above 32px. Elegant, trustworthy look."
+    },
+    "body": {
+      "font": "Inter",
+      "fallback": "sans-serif",
+      "weights": ["400", "500", "600"],
+      "guidelines": "Clean, highly readable, standard sans-serif for content."
+    },
+    "hierarchy_rules": "Do not exceed text-5xl or text-6xl for hero headings. Subheadings should be no more than 2 steps down from headings."
+  },
+  "colors": {
+    "primary": "#0B2545",
+    "primary_description": "Navy Blue - Use for main nav, footer, primary buttons, and hero overlay (mixed with black or dark gradient).",
+    "secondary": "#7A1F3D",
+    "secondary_description": "Maroon - Use for secondary accents, hover states, or important callouts.",
+    "accent": "#B8923D",
+    "accent_description": "Gold Accent - Use for highlights, active links, subtle borders, and key icons.",
+    "background_base": "#FAF6EE",
+    "background_description": "Light Cream - Use as the main background for the site to provide a warm, trustworthy feel instead of stark white.",
+    "surface": "#FFFFFF",
+    "surface_description": "White - Use for cards, dropdowns, and elevated surfaces to contrast with Light Cream.",
+    "text_primary": "#0B2545",
+    "text_secondary": "#4B5563"
+  },
+  "visual_enhancers": {
+    "shadows": "Subtle, soft shadows for modern cards (e.g., shadow-[0_8px_30px_rgb(11,37,69,0.06)]).",
+    "borders": "1px solid #E5E7EB or #B8923D/20 on cards and sections.",
+    "border_radius": "Rounded cards, standard rounded-xl or rounded-2xl.",
+    "glassmorphism": "Use for the sticky navigation bar (backdrop-blur-md bg-white/80) to ensure content scrolls cleanly underneath.",
+    "hover_effects": "Cards lift slightly (-translate-y-1) with an intensified shadow. Buttons should have color shifts (e.g., Primary to Secondary) and scale slightly."
+  },
+  "layouts": {
+    "hero": "Full height or min-h-[80vh] with the primary school exterior image. Gradient overlay (bg-gradient-to-r from-[#0B2545]/80 to-transparent) to ensure Lora headings and Inter text are perfectly readable. Left-aligned content.",
+    "about": "Asymmetrical 2-column layout. Image on one side (with soft rounded corners and drop shadow), text on the other.",
+    "why_choose_us": "Bento grid or 3-column masonry/grid of rounded cards. Icons with Gold accent.",
+    "facilities": "Grid of image cards with overlay text. Or alternating row layout.",
+    "gallery": "Masonry grid or tight 4-6 image grid with hover zoom (scale-105) inside overflow-hidden wrappers.",
+    "contact": "2-column layout. Left side: Contact info and map placeholder. Right side: Front-end inquiry form.",
+    "spacing": "Generous spacing. Use py-16 or py-24 for section paddings. Grid gaps of gap-8 or gap-12."
+  },
+  "motion": {
+    "scroll_animations": "Use framer-motion. Fade in and translate up (y: 20 -> 0) for sections as they enter viewport.",
+    "micro_interactions": "Hover states on all buttons, links, and cards. Use smooth transitions (duration-300 ease-out).",
+    "page_transitions": "Subtle fade-in on page mount."
+  },
+  "components": {
+    "navigation": "Sticky top, z-50. Glassmorphism effect. Contains Logo/Name, Links (Home, About Us, Academics, Admissions, Gallery, Contact), and Apply Now button.",
+    "cards": "White background, rounded-2xl, subtle shadow, p-6 or p-8.",
+    "buttons": "Pill-shaped (rounded-full) or slightly rounded (rounded-lg). Primary button: Navy background, White text. Secondary/Hover: Maroon or Gold.",
+    "footer": "Navy Blue background, White/Light Cream text. 4-column layout (About, Quick Links, Contact, Social). Large bottom padding.",
+    "back_to_top": "Fixed bottom right, Gold accent or Navy, appears after scrolling.",
+    "faq": "Shadcn Accordion. Clean lines, plus/minus icons."
+  },
+  "image_urls": {
+    "hero_exterior": "https://images.pexels.com/photos/17565045/pexels-photo-17565045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "students_classroom": "https://images.pexels.com/photos/8422158/pexels-photo-8422158.jpeg",
+    "students_learning": "https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg",
+    "library": "https://images.pexels.com/photos/3747511/pexels-photo-3747511.jpeg",
+    "geography_class": "https://images.pexels.com/photos/35551010/pexels-photo-35551010.jpeg",
+    "modern_building": "https://images.unsplash.com/photo-1777378543333-b4fb4f96fdd3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBzY2hvb2wlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8fHx8MTc4MzUxOTkwNnww&ixlib=rb-4.1.0&q=85",
+    "toddlers": "https://images.unsplash.com/photo-1527822618093-743f3e57977c"
+  },
+  "instructions_to_main_agent": [
+    "Build a multi-page routing structure using React Router (Home, About, Academics, Admissions, Gallery, Contact).",
+    "Implement the sticky navigation bar with a backdrop-blur-md on scroll.",
+    "Use Framer Motion for smooth scroll animations (fade-in, slide-up) for sections.",
+    "Apply Lora font to all headings (h1 to h6) and Inter to body text.",
+    "Follow the color palette strictly: Navy Blue (#0B2545) for main structural elements, Maroon (#7A1F3D) and Gold (#B8923D) for accents and buttons, Light Cream (#FAF6EE) for the page background, White (#FFFFFF) for cards.",
+    "Create a clean, frontend-only contact form with validation.",
+    "Use lucide-react for UI iconography.",
+    "Ensure the hero image uses a gradient overlay to maintain accessible contrast for text.",
+    "Include a 'Back to Top' button that appears on scroll.",
+    "Add 'data-testid' to all interactive elements."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) for sticky headers.",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Use sonner for toasts.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 for icons.",
+    "All interactive and key informational elements MUST include a data-testid attribute to facilitate robust automated testing."
+  ]
+}
