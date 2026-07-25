@@ -20,8 +20,16 @@ import {
 } from "../data/siteData";
 import Reveal from "../components/common/Reveal";
 import { SectionHeading } from "../components/common/PageParts";
+import { usePageMeta } from "../hooks/usePageMeta";
 
 const Home = () => {
+  usePageMeta({
+    title: "OCF School Avadi | Ordnance Clothing Factory School, Chennai",
+    description:
+      "OCF School (Ordnance Clothing Factory School), Avadi, Chennai — a CBSE-affiliated school under the Ministry of Defence offering Primary to Higher Secondary education since 1974.",
+    path: "/",
+  });
+
   return (
     <div data-testid="home-page">
       {/* Hero */}

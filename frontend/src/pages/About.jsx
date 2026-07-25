@@ -2,8 +2,16 @@ import { Target, Eye, History, Quote } from "lucide-react";
 import { PageHero, SectionHeading } from "../components/common/PageParts";
 import Reveal from "../components/common/Reveal";
 import { IMAGES, CAMPUS_NEWS_FULL } from "../data/siteData";
+import { usePageMeta } from "../hooks/usePageMeta";
 
 const About = () => {
+  usePageMeta({
+    title: "About Us | OCF School Avadi — Ordnance Clothing Factory School",
+    description:
+      "Learn about OCF School (Ordnance Clothing Factory School), Avadi, Chennai — our history since 1974, mission, vision and CBSE-affiliated academics under the Ministry of Defence.",
+    path: "/about",
+  });
+
   return (
     <div data-testid="about-page">
       <PageHero

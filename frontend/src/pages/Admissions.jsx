@@ -3,8 +3,16 @@ import { ArrowRight } from "lucide-react";
 import { PageHero } from "../components/common/PageParts";
 import Reveal from "../components/common/Reveal";
 import { IMAGES, SCHOOL } from "../data/siteData";
+import { usePageMeta } from "../hooks/usePageMeta";
 
 const Admissions = () => {
+  usePageMeta({
+    title: "Admissions | OCF School Avadi — Ordnance Clothing Factory School",
+    description:
+      "Admissions information for OCF School (Ordnance Clothing Factory School), Avadi, Chennai — process, eligibility and how to apply for the CBSE curriculum.",
+    path: "/admissions",
+  });
+
   return (
     <div data-testid="admissions-page">
       <PageHero

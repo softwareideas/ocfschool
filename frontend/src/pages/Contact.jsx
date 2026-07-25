@@ -2,8 +2,16 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { PageHero, SectionHeading } from "../components/common/PageParts";
 import Reveal from "../components/common/Reveal";
 import { IMAGES, SCHOOL } from "../data/siteData";
+import { usePageMeta } from "../hooks/usePageMeta";
 
 const Contact = () => {
+  usePageMeta({
+    title: "Contact Us | OCF School Avadi — Ordnance Clothing Factory School",
+    description:
+      "Contact OCF School (Ordnance Clothing Factory School), Avadi, Chennai — address, phone, email and school hours.",
+    path: "/contact",
+  });
+
   const details = [
     { icon: MapPin, label: "Address", value: SCHOOL.address },
     { icon: Phone, label: "Phone", value: SCHOOL.phone, href: `tel:${SCHOOL.phone}` },

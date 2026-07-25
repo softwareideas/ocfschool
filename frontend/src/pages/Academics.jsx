@@ -8,8 +8,16 @@ import {
   ANNUAL_EVENTS,
   SCHOLASTIC_AREAS,
 } from "../data/siteData";
+import { usePageMeta } from "../hooks/usePageMeta";
 
 const Academics = () => {
+  usePageMeta({
+    title: "Academics | OCF School Avadi — CBSE Curriculum, Chennai",
+    description:
+      "Explore academics at OCF School (Ordnance Clothing Factory School), Avadi — CBSE curriculum, departments, scholastic areas and annual events for Primary to Higher Secondary.",
+    path: "/academics",
+  });
+
   return (
     <div data-testid="academics-page">
       <PageHero

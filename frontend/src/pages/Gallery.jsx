@@ -3,10 +3,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import { PageHero, SectionHeading } from "../components/common/PageParts";
 import Reveal from "../components/common/Reveal";
 import { IMAGES, GALLERY } from "../data/siteData";
+import { usePageMeta } from "../hooks/usePageMeta";
 
 const categories = ["All", ...new Set(GALLERY.map((g) => g.category))];
 
 const Gallery = () => {
+  usePageMeta({
+    title: "Gallery | OCF School Avadi — Ordnance Clothing Factory School",
+    description:
+      "Photo gallery of OCF School (Ordnance Clothing Factory School), Avadi, Chennai — campus life, science exhibitions, sports, and cultural events.",
+    path: "/gallery",
+  });
+
   const [active, setActive] = useState("All");
 
   const filtered =
