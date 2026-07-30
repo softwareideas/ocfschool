@@ -66,7 +66,7 @@ export const WHY_CHOOSE_US = [
   {
     icon: Dribbble,
     title: "Sports & Cultural Activities",
-    desc: "A vibrant calendar of sports, arts, music and cultural programmes.",
+    desc: "A vibrant calendar of sports, arts and cultural programmes.",
   },
   {
     icon: Sprout,
@@ -98,7 +98,7 @@ export const FACILITIES = [
     icon: Trees,
     title: "Playground",
     desc: "Spacious grounds for outdoor sports and athletics.",
-    image: IMAGES.building,
+    image: "/images/playground.jpeg",
   },
 ];
 
@@ -367,7 +367,7 @@ export const DEPARTMENTS = [
   "Social Sciences",
   "Computer Science",
   "Physical Education",
-  "Arts & Music",
+  "Art & Craft",
   "Value Education",
 ];
 

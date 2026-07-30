@@ -189,7 +189,7 @@ const Academics = () => {
                   Co-curricular Activities
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-cream/75">
-                  Music, dance, drama, debate, art and craft, coding clubs and
+                  Drama, debate, art and craft, coding clubs and
                   eco initiatives help students discover and develop their
                   talents beyond the classroom.
                 </p>
