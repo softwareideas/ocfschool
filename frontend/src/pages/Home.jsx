@@ -13,7 +13,6 @@ import {
   WHY_CHOOSE_US,
   FACILITIES,
   ACADEMIC_SECTIONS,
-  TESTIMONIALS,
   GALLERY,
   SCHOOL_STATS,
   CAMPUS_NEWS,
@@ -38,7 +37,7 @@ const Home = () => {
           <img
             src={IMAGES.heroExterior}
             alt="School campus"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/40" />
         </div>
@@ -192,32 +191,6 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Principal's Message */}
-      <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
-        <Reveal>
-          <div className="rounded-3xl border border-navy/5 bg-white p-8 shadow-[0_8px_30px_rgb(11,37,69,0.06)] sm:p-12">
-            <Quote className="h-12 w-12 text-gold" />
-            <SectionHeading
-              eyebrow="Principal's Message"
-              title="A warm welcome to our school family"
-            />
-            <p className="mt-5 text-base leading-relaxed text-[#4B5563]">
-              “At OCF School, we believe every child is unique and capable of
-              greatness. Our commitment is to provide a supportive environment
-              where students are encouraged to explore, question and grow. We
-              nurture not just scholars, but kind, curious and confident
-              individuals ready to shape a better future.”
-            </p>
-            <div className="mt-6">
-              <p className="font-[Lora] text-lg font-semibold text-navy">
-                B. Revathi
-              </p>
-              <p className="text-sm text-maroon">In-charge Principal</p>
-            </div>
-          </div>
-        </Reveal>
       </section>
 
       {/* Facilities */}
@@ -410,43 +383,6 @@ const Home = () => {
               </div>
             </Reveal>
           ))}
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="bg-white py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Reveal>
-            <SectionHeading
-              center
-              eyebrow="Testimonials"
-              title="What our community says"
-            />
-          </Reveal>
-          <div className="mt-14 grid gap-6 md:grid-cols-2">
-            {TESTIMONIALS.map((t, i) => (
-              <Reveal key={t.name} delay={i * 0.08}>
-                <div
-                  data-testid={`testimonial-card-${i}`}
-                  className="h-full rounded-2xl border border-navy/5 bg-cream p-8"
-                >
-                  <Quote className="h-8 w-8 text-gold" />
-                  <p className="mt-4 text-base leading-relaxed text-navy">
-                    “{t.quote}”
-                  </p>
-                  <div className="mt-6 flex items-center gap-3">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-navy font-semibold text-gold">
-                      {t.name.charAt(0)}
-                    </span>
-                    <div>
-                      <p className="font-semibold text-navy">{t.name}</p>
-                      <p className="text-sm text-maroon">{t.role}</p>
-                    </div>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
 

@@ -1,6 +1,5 @@
 import {
   GraduationCap,
-  MonitorSmartphone,
   Trophy,
   ShieldCheck,
   Dribbble,
@@ -8,7 +7,6 @@ import {
   FlaskConical,
   Laptop,
   BookOpen,
-  Bus,
   Trees,
   School,
 } from "lucide-react";
@@ -22,30 +20,22 @@ export const SCHOOL = {
   board: "CBSE Curriculum",
   established: "1974",
   motto: "Arise & Shine",
-  phone: "+91 44 2637 0000",
-  email: "info@ocfschoolavadi.edu.in",
+  phone: "044 2638 0709",
+  email: "ocfschool@rediffmail.com",
   address: "Ordnance Clothing Factory Estate, Avadi, Chennai, Tamil Nadu 600054",
-  hours: "Mon – Sat: 8:30 AM – 4:00 PM",
+  hours: "Mon – Sat: 8:50 AM – 3:10 PM (2nd Saturday holiday)",
 };
 
-export const LOGO_URL =
-  "https://customer-assets.emergentagent.com/job_tamil-education/artifacts/cwum4sea_converted.png";
+export const LOGO_URL = "/images/school-logo.png";
 
 export const IMAGES = {
-  heroExterior:
-    "https://images.unsplash.com/photo-1777378543333-b4fb4f96fdd3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBzY2hvb2wlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8fHx8MTc4MzUxOTkwNnww&ixlib=rb-4.1.0&q=85",
-  building:
-    "https://images.unsplash.com/photo-1777378543333-b4fb4f96fdd3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBzY2hvb2wlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8fHx8MTc4MzUxOTkwNnww&ixlib=rb-4.1.0&q=85",
-  classroom:
-    "https://images.pexels.com/photos/8422158/pexels-photo-8422158.jpeg",
-  learning:
-    "https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg",
-  library: "https://images.pexels.com/photos/3747511/pexels-photo-3747511.jpeg",
-  geography:
-    "https://images.pexels.com/photos/35551010/pexels-photo-35551010.jpeg",
-  toddlers: "https://images.unsplash.com/photo-1527822618093-743f3e57977c",
-  principal:
-    "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg",
+  heroExterior: "/images/school-main-gate.jpeg",
+  building: "/images/shivaji-block.jpeg",
+  classroom: "/images/classroom-assessment.jpeg",
+  learning: "/images/interactive-learning-session.jpeg",
+  library: "/images/library.jpeg",
+  geography: "/images/school-main-gate.jpeg",
+  toddlers: "/images/national-space-day-assembly.jpeg",
 };
 
 export const NAV_LINKS = [
@@ -62,11 +52,6 @@ export const WHY_CHOOSE_US = [
     icon: GraduationCap,
     title: "Experienced Faculty",
     desc: "Highly qualified, caring teachers with decades of combined teaching experience.",
-  },
-  {
-    icon: MonitorSmartphone,
-    title: "Smart Classrooms",
-    desc: "Digitally-enabled classrooms that make learning interactive and engaging.",
   },
   {
     icon: Trophy,
@@ -92,16 +77,10 @@ export const WHY_CHOOSE_US = [
 
 export const FACILITIES = [
   {
-    icon: MonitorSmartphone,
-    title: "Digital Classrooms",
-    desc: "Interactive smart boards in every classroom.",
-    image: IMAGES.classroom,
-  },
-  {
     icon: FlaskConical,
     title: "Science Labs",
     desc: "Well-equipped Physics, Chemistry and Biology laboratories.",
-    image: IMAGES.geography,
+    image: "/images/chemistry-laboratory.jpeg",
   },
   {
     icon: Laptop,
@@ -121,12 +100,6 @@ export const FACILITIES = [
     desc: "Spacious grounds for outdoor sports and athletics.",
     image: IMAGES.building,
   },
-  {
-    icon: Bus,
-    title: "Transportation",
-    desc: "Safe, GPS-enabled bus service across Avadi and Chennai.",
-    image: IMAGES.heroExterior,
-  },
 ];
 
 export const ACADEMIC_SECTIONS = [
@@ -135,14 +108,14 @@ export const ACADEMIC_SECTIONS = [
     title: "Middle School",
     grades: "Grades VI – VIII",
     desc: "A balanced curriculum that develops critical thinking, curiosity and independent study habits.",
-    image: IMAGES.classroom,
+    image: "/images/middle-school.jpg",
   },
   {
     icon: School,
     title: "High School",
     grades: "Grades IX – X",
     desc: "Rigorous academics preparing students for board examinations with strong conceptual clarity.",
-    image: IMAGES.learning,
+    image: "/images/high-school.jpg",
   },
 ];
 
@@ -158,52 +131,35 @@ export const SCHOLASTIC_AREAS = [
   "Computer Science / IT",
 ];
 
-export const TESTIMONIALS = [
-  {
-    name: "Priya Raghavan",
-    role: "Parent, Grade VII",
-    quote:
-      "The teachers here genuinely care about every child. My daughter has grown in confidence and loves coming to school every day.",
-  },
-  {
-    name: "Arjun Menon",
-    role: "Alumnus, Batch 2019",
-    quote:
-      "OCF School gave me a strong foundation. The values and discipline I learned here still guide me in college and life.",
-  },
-  {
-    name: "Lakshmi Narayanan",
-    role: "Parent, Grade II",
-    quote:
-      "Safe campus, warm environment and excellent communication. I feel completely assured about my son's education.",
-  },
-  {
-    name: "Sanjay Kumar",
-    role: "Student, Grade XI",
-    quote:
-      "The science labs and smart classrooms make learning exciting. Teachers push us to think, not just memorise.",
-  },
-];
-
 export const REAL_PHOTOS = {
-  mainGate: "/images/gallery-01.jpeg",
-  shivajiBlock: "/images/gallery-02.jpeg",
-  chemistryLab: "/images/gallery-03.jpeg",
-  ramanHouseExhibition: "/images/gallery-04.jpeg",
-  nehruHouseExhibition: "/images/gallery-05.jpeg",
-  outdoorAssembly: "/images/gallery-06.jpeg",
-  principalAddress: "/images/gallery-07.jpeg",
-  nccParade: "/images/gallery-08.jpeg",
-  sportsMeet: "/images/gallery-09.jpeg",
-  marchingBand: "/images/gallery-10.jpeg",
-  yogaField: "/images/gallery-11.jpeg",
-  kabaddiWinners: "/images/gallery-12.jpeg",
-  vocationalSession: "/images/gallery-13.jpeg",
-  independenceDance: "/images/gallery-14.jpeg",
-  yogaPyramid: "/images/gallery-15.jpeg",
-  republicDayDance: "/images/gallery-16.jpeg",
-  humanPyramid: "/images/gallery-17.jpeg",
-  teachersDayDance: "/images/gallery-18.jpeg",
+  mainGate: "/images/school-main-gate.jpeg",
+  shivajiBlock: "/images/shivaji-block.jpeg",
+  chemistryLab: "/images/chemistry-laboratory.jpeg",
+  ramanHouseExhibition: "/images/raman-house-bulletin-board.jpeg",
+  nehruHouseExhibition: "/images/nehru-house-bulletin-board.jpeg",
+  outdoorAssembly: "/images/career-guidance.jpeg",
+  nccParade: "/images/drug-awareness-pledge.jpeg",
+  sportsMeet: "/images/annual-sports-meet.jpeg",
+  marchingBand: "/images/marching-band-display.jpeg",
+  yogaField: "/images/yoga-on-the-field.jpeg",
+  kabaddiWinners: "/images/kabaddi-champions.jpeg",
+  vocationalSession: "/images/vocational-education-session.jpeg",
+  independenceDance: "/images/independence-day-dance.jpeg",
+  yogaPyramid: "/images/yoga-pyramid-formation.jpeg",
+  republicDayDance: "/images/republic-day-dance-performance.jpeg",
+  humanPyramid: "/images/human-pyramid-formation.jpeg",
+  teachersDayDance: "/images/teachers-day-dance-performance.jpeg",
+  interactiveLearning: "/images/interactive-learning-session.jpeg",
+  tankModelExhibit: "/images/tank-model-exhibit.jpeg",
+  artCraftSession: "/images/art-craft-session.jpeg",
+  artCraftSketching: "/images/art-craft-sketching.jpeg",
+  nationalSpaceDayAssembly: "/images/national-space-day-assembly.jpeg",
+  spaceDayRocketExhibition: "/images/space-day-rocket-exhibition.jpeg",
+  adityaL1Talk: "/images/aditya-l1-mission-talk.jpeg",
+  classroomAssessment: "/images/classroom-assessment.jpeg",
+  tributeToScientists: "/images/tribute-to-scientists.jpeg",
+  treePlantationDrive: "/images/tree-plantation-drive.jpeg",
+  careerGuidanceTalk: "/images/career-guidance-neet-jee-talk.jpeg",
 };
 
 export const GALLERY = [
@@ -218,14 +174,9 @@ export const GALLERY = [
     category: "Campus",
   },
   {
-    title: "Outdoor Assembly",
+    title: "Career Guidance",
     image: REAL_PHOTOS.outdoorAssembly,
-    category: "Campus",
-  },
-  {
-    title: "Principal Addressing Students",
-    image: REAL_PHOTOS.principalAddress,
-    category: "Campus",
+    category: "Classrooms",
   },
   {
     title: "Chemistry Laboratory",
@@ -233,14 +184,14 @@ export const GALLERY = [
     category: "Science Exhibition",
   },
   {
-    title: "Raman House — Science Exhibition",
+    title: "Raman House — Bulletin Board",
     image: REAL_PHOTOS.ramanHouseExhibition,
-    category: "Science Exhibition",
+    category: "Classrooms",
   },
   {
-    title: "Nehru House — Science Exhibition",
+    title: "Nehru House — Bulletin Board",
     image: REAL_PHOTOS.nehruHouseExhibition,
-    category: "Science Exhibition",
+    category: "Classrooms",
   },
   {
     title: "Vocational Education Session",
@@ -248,9 +199,9 @@ export const GALLERY = [
     category: "Classrooms",
   },
   {
-    title: "NCC Parade Drill",
+    title: "Drug Awareness Pledge",
     image: REAL_PHOTOS.nccParade,
-    category: "Sports",
+    category: "Campus",
   },
   {
     title: "Annual Sports Meet",
@@ -297,6 +248,61 @@ export const GALLERY = [
     image: REAL_PHOTOS.teachersDayDance,
     category: "Cultural Events",
   },
+  {
+    title: "Interactive Digital Learning",
+    image: REAL_PHOTOS.interactiveLearning,
+    category: "Classrooms",
+  },
+  {
+    title: "DRDO Tank Model Exhibit",
+    image: REAL_PHOTOS.tankModelExhibit,
+    category: "Science Exhibition",
+  },
+  {
+    title: "Art & Craft Session",
+    image: REAL_PHOTOS.artCraftSession,
+    category: "Classrooms",
+  },
+  {
+    title: "Art & Craft — Sketching",
+    image: REAL_PHOTOS.artCraftSketching,
+    category: "Classrooms",
+  },
+  {
+    title: "National Space Day Assembly",
+    image: REAL_PHOTOS.nationalSpaceDayAssembly,
+    category: "Science Exhibition",
+  },
+  {
+    title: "National Space Day — Rocket Model Exhibition",
+    image: REAL_PHOTOS.spaceDayRocketExhibition,
+    category: "Science Exhibition",
+  },
+  {
+    title: "Aditya L1 Mission Talk",
+    image: REAL_PHOTOS.adityaL1Talk,
+    category: "Science Exhibition",
+  },
+  {
+    title: "Classroom Assessment",
+    image: REAL_PHOTOS.classroomAssessment,
+    category: "Classrooms",
+  },
+  {
+    title: "Tribute to Indian Scientists",
+    image: REAL_PHOTOS.tributeToScientists,
+    category: "Science Exhibition",
+  },
+  {
+    title: "Tree Plantation Drive",
+    image: REAL_PHOTOS.treePlantationDrive,
+    category: "Campus",
+  },
+  {
+    title: "Career Guidance — NEET/JEE Talk",
+    image: REAL_PHOTOS.careerGuidanceTalk,
+    category: "Classrooms",
+  },
 ];
 
 export const CAMPUS_NEWS_FULL = [
@@ -326,11 +332,7 @@ export const FAQS = [
   },
   {
     q: "What are the school timings?",
-    a: "The school operates Monday to Saturday from 8:30 AM to 4:00 PM. Timings for primary classes may vary slightly.",
-  },
-  {
-    q: "Is transport available?",
-    a: "Yes. We offer safe, GPS-enabled bus service covering Avadi and surrounding areas of Chennai.",
+    a: "The school operates Monday to Saturday from 8:50 AM to 3:10 PM, with the second Saturday of every month as a holiday.",
   },
   {
     q: "How can I apply for admission?",

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export const PageHero = ({ title, subtitle, image, testid }) => {
+export const PageHero = ({ title, subtitle, image, testid, imagePosition = "object-top" }) => {
   return (
     <section
       data-testid={testid}
@@ -10,7 +10,7 @@ export const PageHero = ({ title, subtitle, image, testid }) => {
         <img
           src={image}
           alt={title}
-          className="h-full w-full object-cover"
+          className={`h-full w-full object-cover ${imagePosition}`}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/40" />
       </div>

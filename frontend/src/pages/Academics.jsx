@@ -25,6 +25,7 @@ const Academics = () => {
         title="Academics"
         subtitle="A progressive, CBSE-aligned curriculum designed to build strong foundations and future-ready skills."
         image={IMAGES.learning}
+        imagePosition="object-[center_35%]"
       />
 
       {/* Curriculum */}

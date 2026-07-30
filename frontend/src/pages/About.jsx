@@ -116,34 +116,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Principal's Message */}
-      <section className="bg-navy py-20 lg:py-24">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <Reveal>
-            <Quote className="h-12 w-12 text-gold" />
-            <p className="mb-3 mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold">
-              Principal&apos;s Message
-            </p>
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Leading with purpose and care
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-cream/85">
-              “Education is not merely about scores; it is about shaping human
-              beings of substance. At OCF School, we are devoted to bringing
-              out the best in every child — academically, socially and
-              emotionally. I invite you to join our family and be part of a
-              journey that celebrates learning, curiosity and kindness.”
-            </p>
-            <div className="mt-6">
-              <p className="font-[Lora] text-lg font-semibold text-white">
-                B. Revathi
-              </p>
-              <p className="text-sm text-gold">In-charge Principal</p>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
       {/* Campus News at a Glance */}
       <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
         <Reveal>
